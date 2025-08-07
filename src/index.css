@@ -1,0 +1,25 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.bg-custom-blue {
+  background-color: #1E2A38;
+  background-image: radial-gradient(circle, rgba(184,115,51,0.2) 1px, transparent 1px);
+  background-size: 20px 20px;
+}
+
+.bg-warm-gold {
+  background-color: #C89D56;
+}
+
+.text-warm-gold {
+    color: #C89D56;
+}
+
+.bg-custom-silver {
+  background-color: #C0C0C0;
+}
+
+.text-custom-silver {
+    color: #C0C0C0;
+}

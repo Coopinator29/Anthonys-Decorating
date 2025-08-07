@@ -1,0 +1,15 @@
+body {
+  @apply bg-gray-50 text-gray-900;
+}
+
+.bg-custom-blue {
+  background-color: #1E2A38;
+  background-image: radial-gradient(circle, rgba(184,115,51,0.2) 1px, transparent 1px);
+  background-size: 20px 20px;
+}
+
+.bg-custom-silver {
+  background-color: #C0C0C0; /* Classic silver */
+  background-image: radial-gradient(circle, rgba(100, 100, 100, 0.15) 1px, transparent 1px);
+  background-size: 20px 20px;
+}
