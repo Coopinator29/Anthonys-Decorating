@@ -5,27 +5,46 @@ const Portfolio: React.FC = () => {
     <section id="portfolio" className="bg-custom-blue text-offwhite py-12 px-6">
       <h2 className="text-white text-2xl font-bold mb-6">Our Work</h2>
       <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-        <div className="bg-custom-silver rounded p-4 text-navy cursor-pointer 
-    transform
-    transition-transform duration-200
-    hover:scale-105 active:scale-95">
-          <h3 className="text-lg font-bold mb-2">Hardwood Flooring</h3>
-          <p>Beautiful installations with premium materials.</p>
+
+        {/* Video: Room Overview */}
+        <div className="bg-custom-silver rounded p-4 text-navy shadow-md">
+          <h3 className="text-lg font-bold mb-2">Before Painting: Room Overview</h3>
+          <video
+            className="w-full h-auto rounded mb-2"
+            controls
+            poster="/thumbnails/room-overview.jpg" // Optional placeholder image
+          >
+            <source src="/media/room-overview.mp4" type="video/mp4" />
+            Your browser does not support the video tag.
+          </video>
+          <p>Get a look at the rooms before the painting process began.</p>
         </div>
-        <div className="bg-custom-silver rounded p-4 text-navy cursor-pointer 
-    transform
-    transition-transform duration-200
-    hover:scale-105 active:scale-95">
-          <h3 className="text-lg font-bold mb-2">Tile Work</h3>
-          <p>Modern, durable, and stylish tile finishes.</p>
+
+        {/* Video: Spray Painting Process */}
+        <div className="bg-custom-silver rounded p-4 text-navy shadow-md">
+          <h3 className="text-lg font-bold mb-2">Spray Painting in Action</h3>
+          <video
+            className="w-full h-auto rounded mb-2"
+            controls
+            poster="/thumbnails/spray-painting.jpg"
+          >
+            <source src="/media/spray-painting.mp4" type="video/mp4" />
+            Your browser does not support the video tag.
+          </video>
+          <p>Watch the transformation as I spray paint the walls for a smooth, even finish.</p>
         </div>
-        <div className="bg-custom-silver rounded p-4 text-navy cursor-pointer 
-    transform
-    transition-transform duration-200
-    hover:scale-105 active:scale-95">
-          <h3 className="text-lg font-bold mb-2">Luxury Vinyl</h3>
-          <p>Affordable elegance and easy maintenance.</p>
+
+        {/* Image: Tools Used */}
+        <div className="bg-custom-silver rounded p-4 text-navy shadow-md">
+          <h3 className="text-lg font-bold mb-2">Tools & Equipment</h3>
+          <img
+            src="/media/painting-gear.jpg"
+            alt="Spray painting equipment and tools"
+            className="w-full h-auto rounded mb-2"
+          />
+          <p>High-quality gear I use to ensure a professional finish every time.</p>
         </div>
+
       </div>
     </section>
   );

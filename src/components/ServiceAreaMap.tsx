@@ -8,7 +8,7 @@ export const ServiceAreaMap: React.FC = () => {
   return (
     <section className="max-w-4xl mx-auto mt-10 px-6 py-8 bg-custom-silver text-blue-950 shadow-lg rounded-lg">
       <h2 className="text-3xl font-serif font-bold mb-4 drop-shadow-md">📍 Service Area</h2>
-      <p className="mb-6 text-lg">We proudly serve Falmouth and surrounding communities.</p>
+      <p className="mb-6 text-lg">All around the High Wycombe to Reading area.</p>
 
       <div className="rounded-lg overflow-hidden border border-white shadow-lg">
         <MapContainer center={stokenchurchCoords} zoom={13} scrollWheelZoom={false} className="h-[400px] w-full z-20" dragging={false}>
