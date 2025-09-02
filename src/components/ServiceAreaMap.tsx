@@ -22,7 +22,7 @@ const ServiceAreaMap: React.FC = () => {
       <div className="rounded-lg overflow-hidden border border-white shadow-lg">
         <MapContainer
           center={stokenchurchCoords}
-          zoom={13}
+          zoom={10}
           scrollWheelZoom={false}
           className="h-[300px] sm:h-[400px] w-full z-10"
           dragging={true}
@@ -32,9 +32,6 @@ const ServiceAreaMap: React.FC = () => {
             attribution='&copy; OpenStreetMap contributors'
             url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
           />
-          <Marker position={stokenchurchCoords}>
-            <Popup className="text-sm font-medium">Anthony's Decorating</Popup>
-          </Marker>
         </MapContainer>
       </div>
     </section>

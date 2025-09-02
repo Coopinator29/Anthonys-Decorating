@@ -14,26 +14,6 @@ const Hero: React.FC = () => (
       <h1 className="font-serif text-3xl sm:text-5xl lg:text-6xl font-bold mb-4 text-white drop-shadow-lg">
         Transform Your Space with Anthony's Decorating
       </h1>
-
-      <p className="text-base sm:text-lg mb-8 text-white/90">
-        Premium painter
-      </p>
-
-      <a
-        href="#quote"
-        className="
-          inline-block
-          bg-custom-silver text-navy font-semibold
-          px-6 sm:px-8 py-2.5 sm:py-3
-          rounded-full
-          shadow-lg
-          transition-transform duration-200
-          hover:scale-105 active:scale-95
-        "
-        role="button"
-      >
-        Get a Free Quote
-      </a>
     </div>
   </section>
 );

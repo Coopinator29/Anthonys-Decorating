@@ -4,7 +4,7 @@ import React, { useState } from 'react';
 const Header: React.FC = () => {
   const [menuOpen, setMenuOpen] = useState(false);
 
-  const navItems = ['portfolio', 'service-area', 'quote', 'contact'];
+  const navItems = ['portfolio', 'service-area', 'contact'];
 
   return (
     <header className="bg-custom-silver sticky top-0 z-50 shadow-xl px-4 sm:px-6 lg:px-12 py-3 sm:py-5">

@@ -15,16 +15,12 @@ const App: React.FC = () => {
         <Hero />
 
 
-        <section id="portfolio" className="container mx-auto py-16">
+        <section id="portfolio" className="container mx-auto py-2">
           <Portfolio />
         </section>
 
-        <section id="service-area" className="container mx-auto py-16">
+        <section id="service-area" className="container mx-auto py-2">
           <ServiceAreaMap />
-        </section>
-
-        <section id="quote" className="container mx-auto py-16">
-          <QuoteWizard />
         </section>
 
         <section id="contact" className="container mx-auto py-16">
