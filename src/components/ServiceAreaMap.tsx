@@ -1,6 +1,6 @@
 // components/ServiceAreaMap.tsx
 import React from 'react';
-import { MapContainer, TileLayer, Marker, Popup } from 'react-leaflet';
+import { MapContainer, TileLayer } from 'react-leaflet';
 import 'leaflet/dist/leaflet.css';
 
 const stokenchurchCoords: [number, number] = [51.66677088086126, -0.9021356750397019];
@@ -20,7 +20,7 @@ const ServiceAreaMap: React.FC = () => {
           center={stokenchurchCoords}
           zoom={10}
           scrollWheelZoom={false}
-          className="h-[300px] sm:h-[400px] w-full z-10"
+          className="h-[300px] sm:h-[400px] w-[95%] sm:w-full mx-auto z-10"
           dragging={false}
           style={{ touchAction: 'none' }}
           zoomControl={false}
