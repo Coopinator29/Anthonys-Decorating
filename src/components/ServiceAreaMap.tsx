@@ -7,15 +7,11 @@ const stokenchurchCoords: [number, number] = [51.66677088086126, -0.902135675039
 
 const ServiceAreaMap: React.FC = () => {
   return (
-    <section
-      id="service-area"
-      className="max-w-4xl mx-auto mt-10 px-4 sm:px-6 lg:px-12 py-8 bg-custom-silver text-blue-950 shadow-xl rounded-xl"
-      aria-label="Service area map"
-    >
-      <h2 className="text-2xl sm:text-3xl font-serif font-bold mb-4 drop-shadow-md">
+    <div>
+      <h2 className="text-2xl sm:text-3xl font-serif font-bold mb-4 drop-shadow-md text-white">
         📍 Service Area
       </h2>
-      <p className="mb-6 text-base sm:text-lg">
+      <p className="mb-6 text-base sm:text-lg text-white">
         All around the High Wycombe to Reading area.
       </p>
 
@@ -25,8 +21,9 @@ const ServiceAreaMap: React.FC = () => {
           zoom={10}
           scrollWheelZoom={false}
           className="h-[300px] sm:h-[400px] w-full z-10"
-          dragging={true}
+          dragging={false}
           style={{ touchAction: 'none' }}
+          zoomControl={false}
         >
           <TileLayer
             attribution='&copy; OpenStreetMap contributors'
@@ -34,7 +31,7 @@ const ServiceAreaMap: React.FC = () => {
           />
         </MapContainer>
       </div>
-    </section>
+      </div>
   );
 };
 

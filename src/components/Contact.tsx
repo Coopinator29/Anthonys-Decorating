@@ -4,12 +4,7 @@ import { FaPhoneAlt, FaEnvelope, FaInstagram, FaFacebook } from 'react-icons/fa'
 
 const Contact: React.FC = () => {
   return (
-    <section
-      id="contact"
-      className="bg-custom-silver shadow-xl rounded-xl text-offwhite py-16 px-4 sm:px-6 lg:px-12"
-      aria-label="Contact section"
-    >
-      <div className="max-w-2xl mx-auto bg-custom-blue backdrop-blur-md rounded-xl shadow-xl p-8 border border-white/10">
+      <div className="max-w-2xl mx-auto bg-custom-blue backdrop-blur-md rounded-xl p-8">
         <h2 className="text-white text-3xl sm:text-4xl font-serif font-bold mb-6 text-center drop-shadow-md">
           Let’s Connect
         </h2>
@@ -60,7 +55,6 @@ const Contact: React.FC = () => {
           </li>
         </ul>
       </div>
-    </section>
   );
 };
 
