@@ -1,9 +1,7 @@
 import React from 'react'
 import Header from './components/Header'
 import Hero from './components/Hero'
-import Portfolio from './components/Portfolio'
 import ServiceAreaMap from './components/ServiceAreaMap'
-import { QuoteWizard } from './components/QuoteForm'
 import Contact from './components/Contact'
 import Footer from './components/Footer'
 
@@ -13,13 +11,7 @@ const App: React.FC = () => {
       <Header />
       <main className="flex-grow">
         <Hero />
-
-
-        <section id="portfolio" className="container mx-auto py-2">
-          <Portfolio />
-        </section>
-
-        <section id="service-area" className="container mx-auto py-2">
+        <section id="service-area" className="container mx-auto py-2 mt-4">
           <ServiceAreaMap />
         </section>
 
