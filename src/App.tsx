@@ -4,10 +4,12 @@ import Hero from './components/Hero'
 import ServiceAreaMap from './components/ServiceAreaMap'
 import Contact from './components/Contact'
 import Footer from './components/Footer'
+import { Analytics } from "@vercel/analytics/react"
 
 const App: React.FC = () => {
   return (
     <div className="bg-custom-blue text-offwhite min-h-screen flex flex-col">
+      <Analytics />
       <Header />
       <main className="flex-grow">
         <Hero />
